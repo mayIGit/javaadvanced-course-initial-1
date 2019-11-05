@@ -13,12 +13,13 @@ public class CheckedException {
 		
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new FileReader("D:\\testfile1.txt"));
+            br = new BufferedReader(new FileReader("D:\\testfile.txt"));
             String line;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (IOException e) {
+        	//e.printStackTrace();
             System.out.println("Error with the file: " + e.getMessage());
         } finally { //The finally block is always executed even when the exception doesn't happen.
             try {
@@ -35,7 +36,7 @@ public class CheckedException {
 		
 		BufferedReader br = null;
 
-	    br = new BufferedReader(new FileReader("D:\\testfile1.txt"));
+	    br = new BufferedReader(new FileReader("D:\\testfile.txt"));
 	    String line;
 	    while ((line = br.readLine()) != null) {
 	    	System.out.println(line);

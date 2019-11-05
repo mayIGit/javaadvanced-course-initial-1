@@ -73,15 +73,15 @@ public class UncheckedException {
 		UncheckedException ex = new UncheckedException();
 		
 		ex.handlingArithmeticException();
-        //ex.notHandlingArithmeticException();
+        ex.notHandlingArithmeticException();
 
-        ex.handlingNullPointerException();
+        //ex.handlingNullPointerException();
         //ex.notHandlingNullPointerException();
         
-        ex.handlingNumberFormatException();
+        //ex.handlingNumberFormatException();
         //ex.notHandlingNumberFormatException();
         
-        ex.handlingArrayIndexOutOfBoundsException();
+        //ex.handlingArrayIndexOutOfBoundsException();
         //ex.notHandlingArrayIndexOutOfBoundsException();
 	}
 
