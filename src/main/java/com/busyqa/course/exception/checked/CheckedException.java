@@ -1,8 +1,8 @@
 package com.busyqa.course.exception.checked;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class CheckedException {
 	
@@ -12,8 +12,9 @@ public class CheckedException {
 	void handlingException() {
 		
         BufferedReader br = null;
-        try {
-            br = new BufferedReader(new FileReader("D:\\testfile.txt"));
+        try { /*Reads the file from the resources folder of the project.*/
+            br = new BufferedReader(new InputStreamReader(getClass().
+            		getClassLoader().getResourceAsStream("testfile.txt")));
             String line;
             while ((line = br.readLine()) != null) {
                 System.out.println(line);
@@ -36,7 +37,8 @@ public class CheckedException {
 		
 		BufferedReader br = null;
 
-	    br = new BufferedReader(new FileReader("D:\\testfile.txt"));
+        br = new BufferedReader(new InputStreamReader(getClass().
+        		getClassLoader().getResourceAsStream("testfile.txt")));
 	    String line;
 	    while ((line = br.readLine()) != null) {
 	    	System.out.println(line);
@@ -55,7 +57,6 @@ public class CheckedException {
 		} catch (IOException e) {
 			System.out.println("Error with the file: " + e.getMessage());
 		}
-
 	}
 
 }
