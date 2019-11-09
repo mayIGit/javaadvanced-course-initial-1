@@ -1,0 +1,7 @@
+Java Search Algorithms
+
+Search algorithm is an algorithm for finding an item with specified properties 
+among a collection of items. The items may be stored individually as records in 
+a database or may be elements of a search space defined by a mathematical formula 
+or procedure, such as the roots of an equation with integer variables or a 
+combination of the two.

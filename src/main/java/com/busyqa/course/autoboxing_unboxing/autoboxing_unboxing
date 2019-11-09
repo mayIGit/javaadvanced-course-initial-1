@@ -1,0 +1,22 @@
+Autoboxing and Unboxing (Since Java 5)
+
+Autoboxing is the automatic conversion that the Java compiler makes between the 
+primitive types and their corresponding object wrapper classes. For example, 
+converting an int to an Integer, a double to a Double, and so on. 
+If the conversion goes the other way, this is called unboxing.
+
+Autoboxing and unboxing lets developers write cleaner code, making it easier to 
+read. The following table lists the primitive types and their corresponding 
+wrapper classes, which are used by the Java compiler for autoboxing and unboxing:
+
+Primitive type - Wrapper class
+  boolean           Boolean
+  byte              Byte
+  char              Character
+  float             Float
+  int               Integer
+  long              Long
+  short             Short
+  double            Double
+  
+  https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html

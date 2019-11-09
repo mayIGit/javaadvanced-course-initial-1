@@ -3,41 +3,43 @@ package com.busyqa.course.collection.set;
 import java.util.HashSet;
 import java.util.Set;
 
-public class StringSet {
+import com.busyqa.course.collection.Person;
+
+public class PersonSet {
 
 	public static void main(String[] args) {
 		
-		Set<String> set = new HashSet<>();
+		Set<Person> set = new HashSet<>();
 		
-		set.add("John"); 
-		set.add("John"); 
-		set.add("Maria");
-		set.add("Peter");
+		set.add(new Person("John",30)); 
+		set.add(new Person("John",30)); 
+		set.add(new Person("Maria",25));
+		set.add(new Person("Peter",35));
 
 		System.out.println("The number of elements is: " + set.size());
 		
-		for (String p: set) {
+		for (Person p: set) {
 			System.out.println(p);
 		}
-			
-		set.add("Joe");
+	
+		set.add(new Person("Joe",35));
 
 		System.out.println("The number of elements is: " + set.size());
 		
-		for (String p: set) {
+		for (Person p: set) {
 			System.out.println(p);
 		}
-		
-		set.remove("Maria");
+
+		set.remove(new Person("Maria",35));
 
 		System.out.println("The number of elements is: " + set.size());
 		
-		for (String p: set) {
+		for (Person p: set) {
 			System.out.println(p);
 		}
 		
 		set.clear();
-		System.out.println("\nThe number of elements is: " + set.size());
+		System.out.println("The number of elements is: " + set.size());
 		
 
 	}

@@ -17,6 +17,8 @@ public class StringList {
 		
 		System.out.println("The size of the list is: " + list.size());
 		
+		/* The Java for-each loop or enhanced for loop was 
+		introduced since JavaSE 5.0*/
 		for (String str: list) {
 			System.out.println(str);
 		}
@@ -27,6 +29,7 @@ public class StringList {
 		
 		System.out.println("The size of the list is: " + list.size());
 		
+		//System.exit(0);
 		for (String str: list) {
 			System.out.println(str);
 		}
