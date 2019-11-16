@@ -25,7 +25,7 @@ public class JavaListSort {
 		System.out.println(list.toString());
 		
         Collections.sort(list);
-		
+
         System.out.println(list.toString());
 		
 		

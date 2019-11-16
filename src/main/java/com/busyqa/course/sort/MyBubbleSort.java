@@ -58,7 +58,7 @@ public class MyBubbleSort {
   
     public static void main(String[] args) {
         int[] input = { 4, 2, 9, 6, 23, 12, 34, 0, 1 };
-        bubbleSort(input);
-        printNumbers(input);
+        MyBubbleSort.bubbleSort(input);
+        MyBubbleSort.printNumbers(input);
     }
 }

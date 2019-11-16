@@ -35,7 +35,7 @@ public class GenericClass<T> {
     	 */
 
 
-    	GenericClass obj2 = new GenericClass(1); /*raw type */
+    	GenericClass obj2 = new GenericClass("busyQA"); /*raw type */
     	
     	obj1 = obj2; /* warning: unchecked conversion */
     	
