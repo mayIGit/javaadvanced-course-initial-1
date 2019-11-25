@@ -22,6 +22,7 @@ public class StringList {
 		for (String str: list) {
 			System.out.println(str);
 		}
+	
 		
 		list.add(2,"newElement");
 		
@@ -33,7 +34,7 @@ public class StringList {
 		for (String str: list) {
 			System.out.println(str);
 		}
-		
+		//System.exit(0);
 		list.remove("newElement");
 		System.out.println("Executing list.remove(\"newElement\");");		
 		System.out.println("The size of the list is: " + list.size());

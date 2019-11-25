@@ -19,7 +19,7 @@ public class StringSet {
 		for (String p: set) {
 			System.out.println(p);
 		}
-			
+		
 		set.add("Joe");
 
 		System.out.println("The number of elements is: " + set.size());
