@@ -1,8 +1,5 @@
 package com.busyqa.course.generics.raw;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class GenericClass<T> {
 
     // T stands for "Type"
@@ -34,27 +31,6 @@ public class GenericClass<T> {
     	  
     	 */
 
-
-    	GenericClass obj2 = new GenericClass("busyQA"); /*raw type */
-    	
-    	obj1 = obj2; /* warning: unchecked conversion */
-    	
-    	/* Raw types show up in legacy code because lots of API classes (such as 
-    	 * the Collections classes) were not generic prior to JDK 5.0. When using 
-    	 * raw types, you essentially get pre-generics behavior — a Box gives you 
-    	 * Objects. For backward compatibility, assigning a parameterized type 
-    	 * to its raw type is allowed:
-    	 */
-    	
-    	List list = new ArrayList();/*raw type */
-    	list.add(2);
-    	list.add("busyQA"); /* Error!!! */
-    	
-    	for (Object obj: list) {
-    		Integer i = (Integer)obj; /*Unchecked Error */
-    		
-    		System.out.println(i);
-    	}
     	
 	}
 }

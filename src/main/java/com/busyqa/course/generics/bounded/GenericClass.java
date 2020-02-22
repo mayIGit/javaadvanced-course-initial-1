@@ -1,6 +1,6 @@
 package com.busyqa.course.generics.bounded;
 
-public class GenericClass<T extends Number> {
+public class GenericClass<T> {
 	
     // T stands for "Type"
     private T t;

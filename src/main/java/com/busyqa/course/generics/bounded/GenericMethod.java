@@ -2,7 +2,7 @@ package com.busyqa.course.generics.bounded;
 
 public class GenericMethod {
 
-    public static <T extends Number> void inspect(T t){
+    public static <T> void inspect(T t){
         System.out.println("T: " + t.getClass().getName());
     }
     

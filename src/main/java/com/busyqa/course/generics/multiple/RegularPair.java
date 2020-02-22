@@ -25,6 +25,5 @@ public class RegularPair {
 
 	public void setV(String v) {
 		this.v = v;
-	}
-	
+	}	
 }

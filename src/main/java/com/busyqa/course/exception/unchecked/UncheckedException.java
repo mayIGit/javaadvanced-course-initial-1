@@ -7,11 +7,7 @@ public class UncheckedException {
 	
 	void handlingArithmeticException() {
 		System.out.println("Executing handlingArithmeticException");
-		try {			
-			int a = 50/0;
-		}catch(ArithmeticException ex) {
-			System.out.print("Exception Catched: " + ex.getMessage()+ "\n\n");
-		}
+
 	}
 	
 	void notHandlingArithmeticException() {
@@ -22,12 +18,7 @@ public class UncheckedException {
 	
 	void handlingNullPointerException() {
 		System.out.println("Executing handlingNullPointerException");
-		try {			
-			String s = null;
-			s.length();
-		}catch(NullPointerException ex) {
-			System.out.print("Exception Catched: " + ex.getMessage()+ "\n\n");
-		}
+
 	}
 	
 	void notHandlingNullPointerException() {
@@ -38,12 +29,7 @@ public class UncheckedException {
 	
 	void handlingNumberFormatException() {
 		System.out.println("Executing handlingNumberFormatException");
-		try {			
-			String s = "abc";
-			int i = Integer.parseInt(s);
-		}catch(NumberFormatException ex) {
-			System.out.print("Exception Catched: " + ex.getMessage()+ "\n\n");
-		}
+
 	}
 	
 	void notHandlingNumberFormatException() {
@@ -54,12 +40,7 @@ public class UncheckedException {
 
 	void handlingArrayIndexOutOfBoundsException() {
 		System.out.println("Executing handlingArrayIndexOutOfBoundsException");
-		try {			
-			int a[] = new int[5];
-			a[10] = 50;
-		}catch(ArrayIndexOutOfBoundsException ex) {
-			System.out.print("Exception Catched: " + ex.getMessage()+ "\n\n");
-		}
+
 	}
 	
 	void notHandlingArrayIndexOutOfBoundsException() {

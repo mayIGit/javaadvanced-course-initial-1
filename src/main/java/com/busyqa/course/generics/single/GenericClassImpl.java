@@ -1,31 +1,8 @@
 package com.busyqa.course.generics.single;
 
-public class GenericClassImpl<T> implements GenericInterface<T> {
+public class GenericClassImpl{
 
-    // T stands for "Type"
-    private T t;
-   
-    public GenericClassImpl(T t) {
-		super();
-		this.t = t;
-	}
 
-	@Override
-	public void setT(T t) {
-		this.t = t;
-		
-	}
-
-	@Override
-	public T getT() {
-		// TODO Auto-generated method stub
-		return this.t;
-	}
-    
-	@Override
-	public String toString() {
-		return "GenericClass [t=" + t + "]";
-	}
 	
 	public static void main(String[] args) {
 		
@@ -37,12 +14,6 @@ public class GenericClassImpl<T> implements GenericInterface<T> {
 		 * informally called the diamond.
 		 */
 		
-		GenericClass<String> str = new GenericClass<>("busyQA");
-		System.out.println(str);
-		
-		
-		GenericClass<Integer> num = new GenericClass<>(200);
-		System.out.println(num);
 
 	}
 
